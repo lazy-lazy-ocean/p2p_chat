@@ -1,0 +1,3 @@
+#!/bin/sh
+set -e
+# Nothing to stop — P2P has no daemon

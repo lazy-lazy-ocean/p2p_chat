@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+if [ -x /usr/bin/update-desktop-database ]; then
+    update-desktop-database -q /usr/share/applications 2>/dev/null || true
+fi
+
+echo "========================================="
+echo "LAN Chat P2P installed!"
+echo ""
+echo "Usage:"
+echo "  lan-chat"
+echo ""
+echo "All users on the same LAN will"
+echo "discover each other automatically."
+echo "========================================="

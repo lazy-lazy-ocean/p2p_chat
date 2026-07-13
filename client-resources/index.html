@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAN Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-screen" class="screen active">
+  <div class="login-box">
+    <div class="login-icon">💬</div>
+    <h1>LAN Chat</h1>
+    <p>内网 P2P 即时通讯 · 无需服务器</p>
+    <input type="text" id="username-input" placeholder="输入用户名" autofocus maxlength="32">
+    <button id="login-btn" onclick="doLogin()">进入聊天</button>
+    <div class="login-error" id="login-error"></div>
+  </div>
+</div>
+
+<div id="chat-screen" class="screen">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <span>💬 LAN Chat</span>
+      <span class="status-badge" id="status-badge" title="网络状态">🟢 P2P</span>
+    </div>
+    <div class="contact-list" id="contact-list"></div>
+    <div class="sidebar-footer">
+      <span id="my-username"></span>
+    </div>
+  </div>
+
+  <div class="chat-area">
+    <div class="chat-header" id="chat-header">
+      <span id="chat-title">选择一个联系人开始聊天</span>
+    </div>
+    <div class="messages-container" id="messages-container">
+      <div class="messages-list" id="messages-list"></div>
+    </div>
+    <div class="input-area" id="input-area">
+      <input type="text" id="message-input" placeholder="输入消息..." maxlength="4096"
+             onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendCurrentMessage();}">
+      <button id="send-btn" onclick="sendCurrentMessage()">发送</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

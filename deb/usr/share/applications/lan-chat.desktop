@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=LAN Chat
+Name[zh_CN]=局域网聊天
+GenericName=P2P Instant Messenger
+GenericName[zh_CN]=P2P即时通讯
+Comment=Serverless P2P LAN chat
+Comment[zh_CN]=无需服务器的P2P局域网聊天
+Exec=lan-chat
+Icon=lan-chat
+Categories=Network;InstantMessaging;Chat;
+Keywords=chat;lan;p2p;内网;聊天;
+Terminal=false
+StartupNotify=true

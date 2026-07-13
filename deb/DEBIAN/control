@@ -1,0 +1,26 @@
+Package: lan-chat
+Version: 2.0.0
+Section: net
+Priority: optional
+Architecture: amd64
+Maintainer: LAN Chat Team <lan-chat@local>
+Depends: libc6 (>= 2.34), libstdc++6 (>= 11), libgcc-s1 (>= 11),
+ libboost-system1.74.0,
+ libsqlite3-0 (>= 3.37),
+ libgtk-3-0 (>= 3.24),
+ libwebkit2gtk-4.1-0 (>= 2.44),
+ libnotify4 (>= 0.7),
+ libjavascriptcoregtk-4.1-0
+Description: LAN Chat - P2P Internal Network Instant Messenger
+ A lightweight C++ P2P instant messaging tool for internal networks.
+ No server required — each client discovers peers automatically via
+ UDP broadcast and communicates directly over TCP.
+ .
+ Features:
+  * True P2P — no central server needed
+  * Automatic peer discovery (UDP broadcast)
+  * Direct TCP connections between peers
+  * Real-time messaging with sub-millisecond latency
+  * Desktop notifications (libnotify)
+  * Dark theme modern UI
+  * Local message history (SQLite)
