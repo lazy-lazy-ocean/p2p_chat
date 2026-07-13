@@ -1,6 +1,7 @@
 # p2p_chat
 
 ### 使用界面
+同一局域网用户安装后会自动加载，且只需要输入临时用户名
 ![shot](./pictures/01登录.png)
 ![shot](./pictures/02进入界面.png)
 ![shot](./pictures/03加载同一局域网用户.png)
